@@ -73,7 +73,7 @@ const sections = [
   {
     title: 'Limitation of Liability',
     content: [
-      'Flaya is provided "as is" without warranties of any kind',
+      'Flaya is provided &ldquo;as is&rdquo; without warranties of any kind',
       'We are not liable for indirect, incidental, or consequential damages',
       'Our liability is limited to the maximum extent permitted by law',
       'You use the service at your own risk'
@@ -108,7 +108,7 @@ export default function Terms() {
               Last updated: December 2024
             </p>
             <p className="text-gray-300 mt-4">
-              These Terms of Service ("Terms") govern your use of Flaya's location-based social 
+              These Terms of Service (&ldquo;Terms&rdquo;) govern your use of Flaya&apos;s location-based social 
               networking platform. By using our service, you agree to these terms and our Privacy Policy.
             </p>
           </div>

@@ -93,7 +93,7 @@ export default function Contact() {
   return (
     <PageLayout 
       title="Contact Us" 
-      description="We'd love to hear from you. Get in touch with our team."
+      description="We&apos;d love to hear from you. Get in touch with our team."
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Contact Methods */}
@@ -109,7 +109,7 @@ export default function Contact() {
               Get In Touch
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Choose the best way to reach us. We're here to help!
+              Choose the best way to reach us. We&apos;re here to help!
             </p>
           </motion.div>
 
@@ -150,7 +150,7 @@ export default function Contact() {
               Send us a message
             </h2>
             <p className="text-lg text-gray-300 mb-8">
-              Fill out the form below and we'll get back to you as soon as possible.
+              Fill out the form below and we&apos;ll get back to you as soon as possible.
             </p>
 
             {isSubmitted ? (
@@ -158,7 +158,7 @@ export default function Contact() {
                 <div className="text-green-400 text-5xl mb-4">✓</div>
                 <h3 className="text-xl font-semibold text-white mb-2">Message Sent!</h3>
                 <p className="text-gray-300">
-                  Thank you for reaching out. We'll get back to you within 24 hours.
+                  Thank you for reaching out. We&apos;ll get back to you within 24 hours.
                 </p>
               </div>
             ) : (
@@ -255,7 +255,7 @@ export default function Contact() {
               How can we help?
             </h2>
             <p className="text-lg text-gray-300 mb-8">
-              Choose the type of support you need and we'll direct your message to the right team.
+              Choose the type of support you need and we&apos;ll direct your message to the right team.
             </p>
 
             <div className="space-y-6">

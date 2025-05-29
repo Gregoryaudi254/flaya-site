@@ -3,6 +3,8 @@
 import PageLayout from '../components/shared/PageLayout'
 import { motion } from 'framer-motion'
 import { HeartIcon, UserGroupIcon, MapPinIcon, LightBulbIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const values = [
   {
@@ -41,7 +43,7 @@ export default function About() {
   return (
     <PageLayout 
       title="About Flaya" 
-      description="We're on a mission to strengthen communities by connecting neighbors and supporting local businesses."
+      description="We&apos;re on a mission to strengthen communities by connecting neighbors and supporting local businesses."
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Mission Section */}
@@ -55,15 +57,11 @@ export default function About() {
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">
             Our Mission
           </h2>
-          <p className="text-lg leading-8 text-gray-300 mb-8">
-            Flaya was born from the belief that technology should bring people together, not isolate them. 
-            We're building a platform that strengthens communities by connecting neighbors and empowering 
-            local businesses to thrive in the digital age.
+          <p className="text-lg text-gray-600 mb-8">
+            Our mission is simple: help people find genuine connections in an increasingly digital world. We believe that meaningful relationships shouldn&apos;t be left to chance.
           </p>
-          <p className="text-lg leading-8 text-gray-300">
-            Every neighborhood has its own unique character, local heroes, and hidden gems. Our goal is to 
-            help you discover and celebrate what makes your community special while building lasting 
-            relationships with the people and businesses around you.
+          <p className="text-gray-600">
+            &ldquo;I was tired of superficial dating apps. Flaya&apos;s focus on shared interests and genuine conversation helped me find someone who truly gets me.&rdquo;
           </p>
         </motion.div>
 
@@ -119,7 +117,7 @@ export default function About() {
               Meet Our Team
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              We're a passionate team of builders, dreamers, and community advocates.
+              We&apos;re a passionate team of builders, dreamers, and community advocates.
             </p>
           </motion.div>
 
@@ -134,15 +132,12 @@ export default function About() {
                 className="bg-gray-800 rounded-2xl p-8 text-center hover:bg-gray-700 transition-colors"
               >
                 <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center">
-                  <img 
+                  <Image 
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const fallback = e.currentTarget.nextElementSibling as HTMLElement;
-                      if (fallback) fallback.style.display = 'flex';
-                    }}
+                    width={96}
+                    height={96}
                   />
                   <div className="w-full h-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center text-white font-bold text-xl hidden">
                     {member.name.split(' ').map(n => n[0]).join('')}
@@ -168,22 +163,22 @@ export default function About() {
             Join Us in Building Stronger Communities
           </h2>
           <p className="text-red-100 text-lg mb-8">
-            Whether you're looking to connect with neighbors or grow your local business, 
+            Whether you&apos;re looking to connect with neighbors or grow your local business, 
             Flaya is here to help you thrive.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/#download"
               className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-red-600 shadow-sm hover:bg-gray-100 transition-colors"
             >
               Download App
-            </a>
-            <a
+            </Link>
+            <Link
               href="/contact"
               className="inline-flex items-center justify-center rounded-full border-2 border-white px-8 py-4 text-sm font-semibold text-white hover:bg-white hover:text-red-600 transition-colors"
             >
               Get In Touch
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

@@ -17,7 +17,7 @@ const safetyTips = [
     title: 'Protect Your Personal Information',
     tips: [
       'Never share your full address, phone number, or financial information publicly',
-      'Use Flaya\'s built-in messaging system instead of giving out personal contact details',
+      'Use Flaya&apos;s built-in messaging system instead of giving out personal contact details',
       'Be cautious about sharing your exact location in real-time',
       'Review your privacy settings regularly to control who can see your information'
     ]
@@ -47,7 +47,7 @@ const safetyTips = [
     title: 'Online Communication',
     tips: [
       'Be cautious of people who ask for money or financial assistance',
-      'Don\'t click on suspicious links or download files from unknown users',
+      'Don&apos;t click on suspicious links or download files from unknown users',
       'Report users who make you uncomfortable or violate community guidelines',
       'Block and report users who send inappropriate messages or content'
     ]
@@ -57,9 +57,9 @@ const safetyTips = [
     title: 'Location Safety',
     tips: [
       'Use general location areas rather than exact addresses when posting',
-      'Turn off location sharing when you\'re not actively using the app',
+      'Turn off location sharing when you&apos;re not actively using the app',
       'Be mindful of what your posts reveal about your location and routines',
-      'Don\'t post real-time location updates that could compromise your safety'
+      'Don&apos;t post real-time location updates that could compromise your safety'
     ]
   },
   {
@@ -68,7 +68,7 @@ const safetyTips = [
     tips: [
       'Users who refuse to meet in public or pressure you to meet privately',
       'Requests for money, gifts, or personal financial information',
-      'Inconsistent stories or information that doesn\'t add up',
+      'Inconsistent stories or information that doesn&apos;t add up',
       'People who seem too eager to meet or move conversations off the platform'
     ]
   }
@@ -112,7 +112,7 @@ export default function Safety() {
               Safety First
             </h2>
             <p className="text-gray-300">
-              At Flaya, we're committed to creating a safe environment for our community. 
+              At Flaya, we&apos;re committed to creating a safe environment for our community. 
               These guidelines will help you use our platform safely and make positive 
               connections with your neighbors and local businesses.
             </p>
@@ -183,7 +183,7 @@ export default function Safety() {
                 <h3 className="text-lg font-semibold text-white mb-4">In the App</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li>• Tap the three dots on any post or profile</li>
-                  <li>• Select "Report" from the menu</li>
+                  <li>• Select &ldquo;Report&rdquo; from the menu</li>
                   <li>• Choose the appropriate reason</li>
                   <li>• Provide additional details if needed</li>
                 </ul>
@@ -213,7 +213,7 @@ export default function Safety() {
             Emergency Contacts
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {emergencyContacts.map((contact, index) => (
+            {emergencyContacts.map((contact) => (
               <div
                 key={contact.name}
                 className="bg-gray-800 rounded-xl p-6 text-center border border-gray-700"
@@ -240,7 +240,7 @@ export default function Safety() {
             Need Help or Have Questions?
           </h2>
           <p className="text-red-100 mb-8">
-            Our safety team is here to help. Don't hesitate to reach out if you have 
+            Our safety team is here to help. Don&apos;t hesitate to reach out if you have 
             concerns about your safety or the safety of others in the community.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -262,7 +262,7 @@ export default function Safety() {
         {/* Final Note */}
         <div className="mt-12 text-center">
           <p className="text-gray-400 text-sm">
-            Remember: Trust your instincts. If something doesn't feel right, it probably isn't. 
+            Remember: Trust your instincts. If something doesn&apos;t feel right, it probably isn&apos;t. 
             Your safety is more important than being polite.
           </p>
         </div>

@@ -13,9 +13,9 @@ import {
   ShoppingBagIcon,
   StarIcon,
   HeartIcon,
-  ShareIcon,
   PlayIcon
 } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'Features', href: '#features' },
@@ -78,21 +78,21 @@ const testimonials = [
   {
     name: 'Cynthia',
     role: 'Community Member Ruiru',
-    content: 'Flaya helped me discover amazing local businesses I never knew existed. I\'ve made genuine friendships with my neighbors!',
+    content: 'Flaya helped me discover amazing local businesses I never knew existed. I&apos;ve made genuine friendships with my neighbors!',
     avatar: '/testimonial-1.jpg',
     rating: 5
   },
   {
     name: 'Mike Oti',
     role: 'Local Business Owner',
-    content: 'Since joining Flaya, sales in my foodoutlet\'s traffic increased by 40%. The online ordering feature is a game-changer!',
+    content: 'Since joining Flaya, sales in my foodoutlet&apos;s traffic increased by 40%. The online ordering feature is a game-changer!',
     avatar: '/testimonial-2.jpg',
     rating: 5
   },
   {
     name: 'Emily wanjiku',
     role: 'Regular user',
-    content: 'With Flaya, I can now find the best local businesses and buy from them. It\'s like having a personal tour guide for my neighborhood!',
+    content: 'With Flaya, I can now find the best local businesses and buy from them. It&apos;s like having a personal tour guide for my neighborhood!',
     avatar: '/testimonial-3.jpg',
     rating: 5
   }
@@ -298,9 +298,11 @@ export default function Home() {
                     transition={{ duration: 1, delay: 0.5 }}
                     className="relative z-10"
                   >
-                    <img 
+                    <Image 
                       src="/flaya-screenshot-1.jpg" 
                       alt="Flaya App Interface"
+                      width={320}
+                      height={640}
                       className="w-full h-auto rounded-3xl shadow-2xl"
                       style={{
                         filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5))',
@@ -542,13 +544,15 @@ export default function Home() {
                 ))}
               </div>
               <blockquote className="text-xl leading-8 text-white mb-8">
-                "{testimonials[currentTestimonial].content}"
+                &ldquo;{testimonials[currentTestimonial].content}&rdquo;
               </blockquote>
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 mr-4 rounded-full overflow-hidden bg-gray-700 flex items-center justify-center">
-                  <img 
+                  <Image 
                     src={testimonials[currentTestimonial].avatar}
                     alt={testimonials[currentTestimonial].name}
+                    width={64}
+                    height={64}
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       // Fallback to initials if image doesn't load
@@ -601,9 +605,11 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="hover:scale-105 transition-transform duration-300"
                 >
-                  <img 
+                  <Image 
                     src="/googleplay.svg" 
                     alt="Get it on Google Play"
+                    width={160}
+                    height={48}
                     className="h-40 w-auto"
                   />
                 </Link>

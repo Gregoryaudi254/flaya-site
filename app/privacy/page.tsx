@@ -130,8 +130,8 @@ export default function Privacy() {
               Questions About Your Privacy?
             </h2>
             <p className="text-red-100 mb-6">
-              If you have any questions about this Privacy Policy or how we handle your data, 
-              please don't hesitate to contact us.
+              If you have any questions about this Privacy Policy, 
+              please don&apos;t hesitate to contact us.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
